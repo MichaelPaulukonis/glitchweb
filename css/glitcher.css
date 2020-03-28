@@ -1,0 +1,47 @@
+
+#targets {
+    height: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+#original {
+    display: none;
+}
+
+#gifout {
+    display: none;
+}
+
+#thumbs {
+    display: block;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0 0 10px;
+    min-height: 130px;
+}
+
+.thumb {
+    width: 100px;
+    max-height: 100px;
+}
+
+.is_hover {
+    border: 1px dashed #CCC;
+}
+
+.container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
