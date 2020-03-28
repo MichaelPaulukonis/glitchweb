@@ -1,0 +1,5 @@
+# build and deployment
+dist/
+
+# dev artifacts
+node_modules/

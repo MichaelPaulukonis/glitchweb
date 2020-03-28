@@ -1,0 +1,57 @@
+<!doctype html/>
+<html>
+
+  <head>
+    <title>glitch web</title>
+    <link href='css/gallery.css' rel='stylesheet'></link>
+    <link href='css/glitcher.css' rel='stylesheet'></link>
+  </head>
+
+  <body>
+
+    <div id='ui'>
+      <h1>source image (generations: <span id='generation'></span>)</h1>
+      <input type='checkbox' id='autorun' name='autorun' value='value'>auto-run</input>
+      <button id='glitcher'>transform 1</button>
+      <button id='glitcher2'>transform 2</button>
+      <button id='undo'>undo</button>
+      <button id='reset'>reset</button>
+      <button id='deletechecked'>delete checked</button>
+      <button id='makegif'>make gif</button>
+    </div>
+
+    <div id='targets'>
+      <!-- pre-load a default image
+           https://wiki.brown.edu/confluence/display/mcm0750/Dylan%27s+Update+Project
+           (performance score, unknown title) Jackson Mac Low, 1961
+           type-written text on paper, published in Young, La Monte, An Anthology of Chance Operations, 1963
+      -->
+      <img id='original' src='img/78c.jpg'></img>
+      <img id='source' src='img/78c.jpg'></img>
+      <img id='gifout'></img>
+    </div>
+
+    <div id='thumbs'></div>
+
+
+    <!-- TODO:
+         import jquery and jgrowl (notifications on errors that require roll-back, if nothing else)
+         look at mothereffinganimatedgif for org advice.
+         - backbone, hunh? that would help with my various view-states that are a mess...
+         IN-PROGRESS add ability to delete thumbs
+         optionally clear thumbs on reset
+         DONE use arbitrary step as source
+         add ability to create animated gif
+         - gilding the lily?
+         - otoh, hard to export all of these files one-by-one for external use....
+         DONE add ability to view thumb full-size
+         add file-picker button
+    -->
+    <script src='js/jquery.js'></script>
+    <script src='js/jquery.simplemodal.js'></script>
+    <script src='js/gallery.js'></script>
+    <script src='js/glitch.js'></script>
+
+  </body>
+
+</html>
