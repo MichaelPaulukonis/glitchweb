@@ -1,6 +1,6 @@
 {
   "name": "glitchweb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "It's a translation to html/javascript of the GlitchStepper app -- which uses Processing only as far as UI and display is concerned. Both apps breakdown where the underlying rendering engine fails to properly parse JPEGs. This even cannot be trapped in Processing at all (not through normal channels, anyway). It is still difficult to trap in the browser, but much easier.",
   "main": "index.js",
   "scripts": {
