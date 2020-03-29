@@ -301,7 +301,7 @@ var glitchweb = function () {
         console.log('starting worker build');
 
         // TODO: needs to be rebuilt, as its a back-n-forth generator
-        var gifworker = new Worker('../js/gif-worker.js');
+        var gifworker = new Worker('./js/gif-worker.js');
 
         gifworker.onmessage = function (event) {
             if (event.data.type === 'progress') {
