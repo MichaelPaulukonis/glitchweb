@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
     "deploy": "gh-pages -t -d dist",
-    "build": "npm run clean && mkdir dist && cp -r index.html js img css dist",
+    "build": "npm run clean && mkdir dist && cp -r index.html js img css dist && touch dist/.nojekyll",
     "bump": "npm version patch",
     "publish": "npm run bump && DEPLOY_ENV=GH_PAGES npm run build && npm run deploy"
   },
